@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <div class="col-1">
+            <div class="col-1 card-1">
+                <img src="images/logo.png" alt="">
+                <h2>Information System for <br> Alternative Practicum</h2>
+            </div>
+
+            <div class="col-1 card-2">
+                <h1>Login to System</h1>
+                <input type="text" name="Username" placeholder=" Username" id="username"><br>
+
+                <input type="Password" name="Username" placeholder=" Password" id="password"><br>
+
+                <button class="login" id="loginbtn" onclick="getuserfunction()">Login</button>
+            </div>
+
+        </div>
+        
+        <div class="col-2">
+            <button class="signup" id="signupbtn">Sign Up</button>
+        </div>
+    </div>
+
+    <!--Modal-->
+    <div class="modal-signup" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Register to the System</h2>
+            </div>
+
+            <div class="modal-body">
+                <form action="php/login.php" method="post">
+                    <input type="text" name="Username" placeholder=" Username"><br>
+                    
+                    <input type="text" name="Email" placeholder=" Email"><br>
+
+                    <input type="Password" name="Password" placeholder=" Password"><br>
+
+                    <input type="Password" name="CPassword" placeholder=" Confirm Password"><br>
+
+                    <button class="register" name="register">Register</button>
+                </form>
+            </div>
+
+            <div class="modal-footer">
     
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/modal.js"></script>
 </body>
 </html>

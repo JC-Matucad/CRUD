@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+}
+
+.col-1{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-1{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-1 h2{
+    position: relative;
+    display: flex;
+    top: 28%;
+    left: 5%;
+    font-size: 120%;
+}
+
+.card-1 img{
+    position: relative;
+    display: flex;
+    top: 20%;
+    left: 2%;
+    height: 60%;
+    width: 7%;
+}
+
+.card-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-2 h1{
+    margin-bottom: 6%;
+}
+
+.card-2 input{
+    background-color: #e2e9f4;
+    width: 40%;
+    height: 7%;
+    border-radius: 10px;
+    border: 2px solid #c0c5ce;
+    text-decoration: none;
+    outline: none;
+    margin-bottom: 1%;
+}
+
+.col-2{
+    background-image: linear-gradient(to right, #314755 0%, #041821  51%, #314755  100%);;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-1 button{
+    background-color: #121313;
+    margin: 10px;
+    padding: 13px 100px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 40px;
+    display: block;
+    border: none;
+}
+
+.col-2 button{
+    background-color: #c0c5ce;
+    margin: 10px;
+    padding: 13px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: black;            
+    border-radius: 40px;
+    display: block;
+    border: none;
+    margin-right: 35px;
+}
+
+
+.col-1 button:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.modal-signup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+.modal-header h2{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body{
+    width: 100%;
+    height: 100%;
+}
+
+.modal-body form{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body input{
+    background-color: #e2e9f4;
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #c0c5ce;
+    text-decoration: none;
+    outline: none;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body button{
+    background-color: #121313;
+    margin: 10px;
+    padding: 13px 100px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 40px;
+    display: block;
+    border: none;
+}
+  
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .col-1 {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .card-1 {
+        width: 100%;
+        height: 10%;
+    }
+
+    .card-1 h2{
+        font-size: small;
+    }
+
+    .col-2 {
+        width: 100%;
+        height: 100%;
+    }
+
+
+  }
